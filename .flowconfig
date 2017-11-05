@@ -6,24 +6,20 @@
 <PROJECT_ROOT>/.*/node_modules/y18n/.*
 <PROJECT_ROOT>/node_modules/chrome-devtools-frontend/.*
 <PROJECT_ROOT>/node_modules/devtools-timeline-model/.*
+<PROJECT_ROOT>/node_modules/create-react-class/.*
 <PROJECT_ROOT>/.*/__mocks__/.*
 <PROJECT_ROOT>/.*/__tests__/.*
-
-# Ignore Docs
-<PROJECT_ROOT>/docs/.*
-<PROJECT_ROOT>/.*/docs/.*
 
 [include]
 
 [libs]
 ./node_modules/fbjs/flow/lib/dev.js
-./flow
+./scripts/flow
 
 [options]
-module.system=haste
-
 esproposal.class_static_fields=enable
 esproposal.class_instance_fields=enable
+unsafe.enable_getters_and_setters=true
 
 munge_underscores=false
 
@@ -38,4 +34,4 @@ suppress_comment=\\(.\\|\n\\)*\\$FlowFixedInNextDeploy
 suppress_comment=\\(.\\|\n\\)*\\$FlowExpectedError
 
 [version]
-^0.48.0
+^0.53.1

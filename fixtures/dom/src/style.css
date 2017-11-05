@@ -8,22 +8,23 @@ html {
   font-size: 10px;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   font-size: 1.4rem;
   margin: 0;
   padding: 0;
 }
 
-select {
-  width: 12rem;
-}
-
 button {
+  background: white;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  font-size: 16px;
   margin: 10px;
-  font-size: 18px;
-  padding: 5px;
+  padding: 6px 8px;
 }
-
 
 .header {
   background: #222;
@@ -32,6 +33,10 @@ button {
   line-height: 3.2rem;
   overflow: hidden;
   padding: .8rem 1.6rem;
+}
+
+.header select {
+  width: 12rem;
 }
 
 .header__inner {
@@ -101,7 +106,8 @@ fieldset {
   overflow: hidden;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0 0 2rem 0;
 }
 
@@ -211,4 +217,8 @@ li {
   margin: 0 -15px; /* opposite of .test-case padding */
   background-color: #f4f4f4;
   border-top: 1px solid #d9d9d9;
+}
+
+.field-group {
+  overflow: hidden;
 }
